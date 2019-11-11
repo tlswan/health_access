@@ -1,2 +1,2 @@
 # health_access
-Final project for URP 535: Urban Informatic
+Final project for URP 535: Urban Informatics
