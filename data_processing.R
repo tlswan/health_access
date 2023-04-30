@@ -14,7 +14,6 @@ library(ggplot2)
 library(scales)
 library(maptools)
 
-setwd("/Users/tessa/Desktop/coursework/urban_informatics/transit and health")
 #### format npi data ####
 npi_file <- "NPPES_Data_Dissemination_November_2019/npidata_pfile_20050523-20191110.csv"
 # read full npid data file
@@ -40,7 +39,7 @@ colnames(mi_facs)<-c("code","address1","address2","city","state","zip","count")
 mi_facs[,address1:=sub("\\#.*", "",address1)]
 
 fwrite(mi_facs, "mi_npi_facilities.csv")
-mi_facs<-fread("mi_npi_facilities.csv")
+#mi_facs<-fread("mi_npi_facilities.csv")
 
 #### geocode npi mi facility addresses ####
 # geocoder: http://geoservices.tamu.edu/Services/Geocode/WebService/)
